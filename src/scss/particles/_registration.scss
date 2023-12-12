@@ -61,7 +61,7 @@
         border: 2px solid $color-purple;
         border-radius: 5px;
         font-size: $font-md;
-        background-image: url('/src/image/email-svgrepo-com.svg');
+        background-image: url('/src/image/email-svgrepo-com.svg') !important;
         background-size: 20px 20px;
         background-position: 10px 10px;
         background-repeat: no-repeat;
@@ -76,7 +76,7 @@
     }
 
     &__input2{
-        background-image: url('/src/image/key-password-svgrepo-com.svg');
+        background-image: url('/src/image/key-password-svgrepo-com.svg') !important;
     }
 
     &__button{

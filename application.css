@@ -429,7 +429,7 @@ a {
   border: 2px solid #aa17b5;
   border-radius: 5px;
   font-size: 1rem;
-  background-image: url("/src/image/email-svgrepo-com.svg");
+  background-image: url("/src/image/email-svgrepo-com.svg") !important;
   background-size: 20px 20px;
   background-position: 10px 10px;
   background-repeat: no-repeat;
@@ -441,7 +441,7 @@ a {
   border: 2px solid #39ccbb;
 }
 .registration__input2 {
-  background-image: url("/src/image/key-password-svgrepo-com.svg");
+  background-image: url("/src/image/key-password-svgrepo-com.svg") !important;
 }
 .registration__button {
   font-family: "Oswald", sans-serif;
