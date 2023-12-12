@@ -1,0 +1,33 @@
+.select{
+
+
+    &__conteiner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        display:none;
+
+        @media (max-width:767.9999px) {
+            display:flex;
+        }
+    }
+}
+
+.title_box{
+
+    &__conteiner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    &__title{
+        font-family: $font-oswald;
+        font-size: $font-xxl;
+        font-weight: 700;
+        color: $color-purple;
+    }
+}
+

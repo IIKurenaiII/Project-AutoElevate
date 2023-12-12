@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoElevate</title>
+    <link rel="stylesheet" href="application.css">
+    <script defer src="./src/js/buttons.js"></script>
+    <script src="./src/js/navbar.js"></script>
+    <script src="./src/js/scroll.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="conteiner">
+            <div class="navbar__body">
+                <div class="navbar__logo">
+                    <div><a href="" class="navbar__logo_link">AutoElevate</a></div>
+                </div>
+                <div class="navbar__motto">Create your individuality</div>
+                <div class="navbar__burger">
+                    <span class="navbar__span"></span>
+                </div>
+                <div class="navbar__conteiner_menu">
+                    <div class="navbar__list">
+                        <div ><a href="" class="navbar__link">Контакти</a></div>
+                        <div ><a href="./about.html" class="navbar__link">Про нас</a></div>
+                        <button class="navbar__button" type="button" id="btn">Тюнінг</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="slaider">
+        <div class="custom_conteiner">
+            <div class="custom-container">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./src/image/slide-image1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Створи свою мрію з нами</h5>
+                                <p>Сотні деталей для твого авто.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./src/image/slide2-employer.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Елітна Команда Експертів</h5>
+                                <p>Наша команда фахівців з тюнінгу гарантує вам найвищий ступінь майстерності та індивідуальний підхід.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./src/image/slide3-engine.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Великий асортимент послуг</h5>
+                                <p>Автосервіс,тюнінг,малярка,магазин,диностенд,детейлинг.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="registration">
+        <div class="conteiner">
+            <div class="registration__conteiner">
+                <div class="registration__logo-conteiner">
+                    <img src="./src/image/Logo-1.svg" alt="" class="registration__logo">
+                </div>
+            </div>
+            <hr class="registration__line">
+            <div class="registration__block">
+                <div class="registration__svg"><img src="./src/image/account_avatar_face_man_people_profile_user_icon_123197.svg" alt=""></div>
+                <div class="registration__input-block">
+                    <div class="registration__title"><h2>Regisrtation</h2></div>
+                    <div><input type="text" class="registration__input" placeholder="e-mail" name="mail"></div>
+                    <div><input type="text" class="registration__input registration__input2" placeholder="password" name="rassword"></div>
+                    <button class="registration__button">Зареєструватися</button>
+                </div>
+            </div>
+            <hr class="line">
+        </div>
+    </section>
+    <section class="carlist">
+        <div class="conteiner">
+            <div class="carlist__conteiner_title">
+                <div class="carlist__title">Рестайлінг та тюнінг топових марок автомобілів</div>
+                <div class="carlist__sup-title">Наші фахівці допоможуть надати Вашому автомобілю індивідуальність, вишуканість та неповторність.</div>
+            </div>
+            <div class="carlist__grid_conteiner">
+                <div class="carlist__block">
+                    <div class="carlist__block-title">BMW</div>
+                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__conteiner-button">
+                        <div class="carlist__button animation">
+                            <span class="label">Детальніше</span>
+                            <span class="icon">
+                                <span></span>
+                            </span>
+                            <span class="icon2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carlist__block">
+                    <div class="carlist__block-title">BMW</div>
+                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__conteiner-button">
+                        <div class="carlist__button animation">
+                            <span class="label">Детальніше</span>
+                            <span class="icon">
+                                <span></span>
+                            </span>
+                            <span class="icon2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carlist__block">
+                    <div class="carlist__block-title">BMW</div>
+                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__conteiner-button">
+                        <div class="carlist__button animation">
+                            <span class="label">Детальніше</span>
+                            <span class="icon">
+                                <span></span>
+                            </span>
+                            <span class="icon2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carlist__block">
+                    <div class="carlist__block-title">BMW</div>
+                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__conteiner-button">
+                        <div class="carlist__button animation">
+                            <span class="label">Детальніше</span>
+                            <span class="icon">
+                                <span></span>
+                            </span>
+                            <span class="icon2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carlist__block">
+                    <div class="carlist__block-title">BMW</div>
+                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__conteiner-button">
+                        <div class="carlist__button animation">
+                            <span class="label">Детальніше</span>
+                            <span class="icon">
+                                <span></span>
+                            </span>
+                            <span class="icon2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carlist__block">
+                    <div class="carlist__block-title">BMW</div>
+                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__conteiner-button">
+                        <div class="carlist__button animation">
+                            <span class="label">Детальніше</span>
+                            <span class="icon">
+                                <span></span>
+                            </span>
+                            <span class="icon2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carlist__block">
+                    <div class="carlist__block-title">BMW</div>
+                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__conteiner-button">
+                        <div class="carlist__button animation">
+                            <span class="label">Детальніше</span>
+                            <span class="icon">
+                                <span></span>
+                            </span>
+                            <span class="icon2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carlist__block">
+                    <div class="carlist__block-title">BMW</div>
+                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__conteiner-button">
+                        <div class="carlist__button animation">
+                            <span class="label">Детальніше</span>
+                            <span class="icon">
+                                <span></span>
+                            </span>
+                            <span class="icon2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carlist__block">
+                    <div class="carlist__block-title">BMW</div>
+                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__conteiner-button">
+                        <div class="carlist__button animation">
+                            <span class="label">Детальніше</span>
+                            <span class="icon">
+                                <span></span>
+                            </span>
+                            <span class="icon2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carlist__block">
+                    <div class="carlist__block-title">BMW</div>
+                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__conteiner-button">
+                        <div class="carlist__button animation">
+                            <span class="label">Детальніше</span>
+                            <span class="icon">
+                                <span></span>
+                            </span>
+                            <span class="icon2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carlist__block">
+                    <div class="carlist__block-title">BMW</div>
+                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__conteiner-button">
+                        <div class="carlist__button animation">
+                            <span class="label">Детальніше</span>
+                            <span class="icon">
+                                <span></span>
+                            </span>
+                            <span class="icon2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carlist__block">
+                    <div class="carlist__block-title">BMW</div>
+                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__conteiner-button">
+                        <div class="carlist__button animation">
+                            <span class="label">Детальніше</span>
+                            <span class="icon">
+                                <span></span>
+                            </span>
+                            <span class="icon2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+        </div>
+    </section>
+    <section class="tuning">
+        <div class="conteiner">
+            <div class="tuning__conteiner">
+                <div class="tuning__title">Пропозиції</div>
+                <div class="tuning__block-conteiner">
+                    <div class="tuning__block tuning__block1">
+                        <img src="./src/image/apr_ecu_9.png" alt=""  class="tuning__img">
+                        <button class="tuning__block-button" type="button" id="tunbtn">Stage 1</button>
+                    </div>
+                    <div class="tuning__block tuning__block2">
+                        <img src="./src/image/ats-aurora-vfr-4000-stage-2-turbocharger-assembly-2013-2018-ram-6-7l-cummins_01.png" alt="" class="tuning__img">
+                        <button class="tuning__block-button" type="button" id="tunbtn2">Stage 2</button>
+                    </div>
+                    <div class="tuning__block tuning__block3">
+                        <img src="./src/image/20tsi_stage3_gtx_kit_1_1.jpg" alt="" class="tuning__img">
+                        <button class="tuning__block-button" type="button" id="tunbtn3">Stege 3</button>
+                    </div>
+                    <div class="tuning__block tuning__block4">
+                        <img src="./src/image/tuning-auto-parts-2.jpg" alt="" class="tuning__img">
+                        <button class="tuning__block-button">Магазин</button>
+                    </div>
+                </div>
+                <button class="tuning__button" type="button">Дивитись більше</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__conteiner">
+            <div class="conteiner">
+                <div class="footer__block">
+                    <div class="footer__block-logo">
+                        <img src="./src/image/Logo-1.svg" alt="" class="footer__logo">
+                        <div class="footer__title">Наші контакти</div>
+                    </div>
+                    <div class="footer__content">
+                        <div class="footer__about">
+                            <div class="footer__about-title">AutoElevate</div>
+                            <div class="footer__about-content">Наше тюнінг ательє є одним із найкращих з великим досвідом. Коротку інформацію про нас можна подивитись <a href="./about.html" class="footer__link">тут</a>.</div>
+                        </div>
+                        <div class="footer__location">
+                            <div class="footer__location-title">Наше місцезнаходження</div>
+                            <div class="footer__location-content">Україна, Київ або Ужгород </div>
+                        </div>
+                        <div class="footer__contact">
+                            <div class="footer__contact-phone">Швидко звязатися з нами за номером: <a href="" class="footer__link">+38(096) 888 11 55</a></div>
+                            <div class="footer__contact-email">Наша електронна пошта: <a href="" class="footer__link">AutoElevate@gmail.com</a></div>
+                            <div class="footer__messengers">
+                                <div class="footer__messenger-instagram"><img src="./src/image/Instagram_logo_2016.svg" alt="" class="footer__mes" id="ig"></div>
+                                <div class="footer__messenger-facebook"><img src="./src/image/Facebook_F_icon.svg" alt="" class="footer__mes" id="fb"></div>
+                                <div class="footer__messenger-yotube"><img src="./src/image/youtube-svgrepo-com.svg" alt="" class="footer__mes" id="yt"></div>
+                                <div class="footer__messenger-telegram"><img src="./src/image/Telegram_logo.svg" alt="" class="footer__mes" id="tl"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <button class="button__scroll" onclick="scrollToTop()"><img src="./src/image/up-arrow_icon-icons.com_73351.svg" alt="" class="button__scroll-img"></button> -->
+    <button class="playlist-button"onclick="togglePlay()">▶️</button>
+    <audio id="audioPlayer" controls style="display: none;">
+        <source src="./src/audio/say3am-staarz-broken-trust-mp3.mp3" type="audio/mp3">
+    </audio>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

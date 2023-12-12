@@ -1,0 +1,12 @@
+.playlist-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: $color-purple;
+    border: 1px solid $color-black;
+    border-radius: 999px;
+    padding: 5px;
+    font-size: $font-xxxl;
+    color: $color-white;
+    z-index: 3;
+}
