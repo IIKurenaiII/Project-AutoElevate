@@ -78,3 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     scrollToTopBtn.addEventListener('click', scrollToTop);
 });
+
+//select 
+function closeDropdown() {
+    console.log('Dropdown closed');
+}
