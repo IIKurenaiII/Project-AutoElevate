@@ -23,3 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', handleScroll);
     handleScroll(); 
 });
+
+
+// slider-bootstrap
+document.addEventListener('DOMContentLoaded', function () {
+    var myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), {
+        interval: 5000000000000000
+    });
+});

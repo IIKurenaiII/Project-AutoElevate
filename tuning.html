@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./application.css">
-    <script defer src="./src/js/buttons.js"></script>
+    <script src="./src/js/buttons.js"></script>
     <script src="./src/js/navbar.js"></script>
     <script src="./src/js/scroll.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +35,6 @@
         <div class="conteiner">
             <div class="title_box__conteiner">
                 <div class="title_box__title">Виберіть ваше авто</div>
-                <div class="title"></div>
             </div>
         </div>
     </div>
@@ -197,6 +196,62 @@
             </div>
         </div>
     </div>
+    <div class="title_box">
+        <div class="conteiner">
+            <div class="title_box__conteiner">
+                <div class="title_box__title">Виберіть стадію тюнінгу</div>
+            </div>
+        </div>
+    </div>
+    <section class="stage">
+        <div class="conteiner">
+            <div class="stage__conteiner">
+                <div class="stage__block" id="block1">
+                    <div class="stage__block-photo">
+                        <img class="stage__photo" src="./src/image/apr_ecu_9.png" alt="">
+                    </div>
+                    <div class="stage__block-text">Stage 1</div>
+                    <div class="stage__block-button animation" onclick="toggleVisibility('block1', 'block2', 'block3', this)">
+                        <span class="label">Вибрати</span>
+                        <span class="icon">
+                            <span></span>
+                        </span>
+                        <span class="icon2"></span>
+                    </div>
+                </div>
+                <div class="stage__block" id="block2">
+                    <div class="stage__block-photo">
+                        <img class="stage__photo" src="./src/image/ats-aurora-vfr-4000-stage-2-turbocharger-assembly-2013-2018-ram-6-7l-cummins_01.png" alt="">
+                    </div>
+                    <div class="stage__block-text">Stage 2</div>
+                    <div class="stage__block-button animation" onclick="toggleVisibility('block2', 'block1', 'block3', this)">
+                        <span class="label">Вибрати</span>
+                        <span class="icon">
+                            <span></span>
+                        </span>
+                        <span class="icon2"></span>
+                    </div>
+                </div>
+                <div class="stage__block" id="block3">
+                    <div class="stage__block-photo">
+                        <img class="stage__photo" src="./src/image/20tsi_stage3_gtx_kit_1_1.jpg" alt="">
+                    </div>
+                    <div class="stage__block-text">Stage 3</div>
+                    <div class="stage__block-button animation" onclick="toggleVisibility('block3', 'block1', 'block2', this)">
+                        <span class="label">Вибрати</span>
+                        <span class="icon">
+                            <span></span>
+                        </span>
+                        <span class="icon2"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="stage__btn-conteiner">
+                <button class="stage__btn" onclick="confirmSelection()">Підтвердити</button>
+                <button class="stage__btn" onclick="placeOrder()">Замовити</button>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="footer__conteiner">
             <div class="conteiner">

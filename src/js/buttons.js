@@ -83,3 +83,24 @@ document.addEventListener("DOMContentLoaded", function () {
 function closeDropdown() {
     console.log('Dropdown closed');
 }
+
+
+//tuning.button
+function toggleVisibility(showId, hideId1, hideId2, button) {
+    var showBlock = document.getElementById(showId);
+    var hideBlock1 = document.getElementById(hideId1);
+    var hideBlock2 = document.getElementById(hideId2);
+
+    showBlock.classList.remove('hidden');
+    hideBlock1.classList.add('hidden');
+    hideBlock2.classList.add('hidden');
+
+    var label = button.querySelector('.label');
+    if (label.textContent === 'Вибрати') {
+        label.textContent = 'Відмінити';
+    } else {
+        label.textContent = 'Вибрати';
+        hideBlock1.classList.remove('hidden');
+        hideBlock2.classList.remove('hidden');
+    }
+}
