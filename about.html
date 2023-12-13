@@ -22,7 +22,7 @@
                 </div>
                 <div class="navbar__conteiner_menu">
                     <div class="navbar__list">
-                        <div class="navbar__link"><a href=""></a>Контакти</div>
+                        <div ><a class="navbar__link open-modal-link" href="#" onclick="openModal()">Контакти</a></div>
                         <div class="navbar__link"><a href=""></a>Про нас</div>
                         <button class="navbar__button" type="button" id="btn">Тюнінг</button>
                     </div>
@@ -30,6 +30,27 @@
             </div>
         </div>
     </nav>
+    <div class="modal" id="myModal">
+        <div class="modal__content">
+            <div class="modal__image-conteiner">
+                <img class="modal__logo" src="./src/image/Logo-1.svg" alt="">
+            </div>
+            <div class="modal__contact-conteiner">
+                <div class="modal__title">Наші контакти</div>
+                <div class="modal__phone">Наш телефон: +38(096) 888 11 55</div>
+                <div class="modal__email">Наша електронна адреса: AutoElevate@gmail.com</div>
+            </div>
+            <div class="modal__social-conteiner">
+                <div class="modal__ig"><img src="./src/image/Instagram_logo_2016.svg" class="modal__social" alt="" id="ig"></div>
+                <div class="modal__fb"><img src="./src/image/Facebook_F_icon.svg" class="modal__social" alt="" id="fb"></div>
+                <div class="modal__tl"><img src="./src/image/Telegram_logo.svg" class="modal__social" alt="" id="tl"></div>
+            </div>
+            <div class="modal__buttons-conteiner">
+                <div><button class="modal__button">Зателефонувати</button></div>
+                <div><button class="modal__button" onclick="closeModal()">Закрити</button></div>
+            </div>
+        </div>
+    </div>
     <section class="aboutus">
         <div class="conteiner">
             <div class="aboutus__conteiner">

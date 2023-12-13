@@ -104,3 +104,21 @@ function toggleVisibility(showId, hideId1, hideId2, button) {
         hideBlock2.classList.remove('hidden');
     }
 }
+
+//modal-windows
+function openModal() {
+    var modal = document.getElementById('myModal');
+    modal.style.display = 'flex';
+}
+
+function closeModal() {
+    var modal = document.getElementById('myModal');
+    modal.style.display = 'none';
+}
+
+window.onclick = function (event) {
+    var modal = document.getElementById('myModal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+}
