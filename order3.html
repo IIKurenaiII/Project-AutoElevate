@@ -8,7 +8,7 @@
     <script src="./src/js/navbar.js"></script>
     <script src="./src/js/scroll.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Замовлення Stage 1</title>
+    <title>Замовлення Stage 3</title>
 </head>
 <body>
     <nav class="navbar">
@@ -56,8 +56,8 @@
         <div class="conteiner">
             <div class="stage1__conteiner">
                 <div class="stage1__image-conteiner">
-                    <img src="./src/image/apr_ecu_9.png" alt="" class="stage1__image">
-                    <div class="stage1__image-title">Stage 1</div>
+                    <img src="./src/image/20tsi_stage3_gtx_kit_1_1.jpg" alt="" class="stage1__image">
+                    <div class="stage1__image-title">Stage 3</div>
                 </div>
                 <div class="stage1__title">Виберіть опції вашого тюнінгу</div>
                 <div class="stage1__parts-conteiner">
@@ -69,21 +69,56 @@
                         </label>
                     </div>
                     <div class="stage1__parts">
-                        <div class="stage1__parts-text"><b class="stage1__bold">Вихлопна система:</b> Заміна вихлопної системи або окремих її компонентів для підвищення продуктивності та змінення звучання.</div>
+                        <div class="stage1__parts-text"><b class="stage1__bold">Внутрішній тюнінг двигуна: </b>Зміни внутрішніх компонентів двигуна, таких як ковані валів, підвищена ступінь стиснення, спеціалізовані головки блока циліндрів і т. д.</div>
                         <label class="switch">
                             <input type="checkbox">
                             <span class="slider round"></span>
                         </label>
                     </div>
                     <div class="stage1__parts">
-                        <div class="stage1__parts-text"><b class="stage1__bold">Підвіска:</b>Установка спортивної підвіски для поліпшення керованості та стійкості на дорозі.</div>
+                        <div class="stage1__parts-text"><b class="stage1__bold">Інтеркулер:</b> Встановлення більш ефективного інтеркулера для зниження температури наддува і покращення продуктивності.</div>
                         <label class="switch">
                             <input type="checkbox">
                             <span class="slider round"></span>
                         </label>
                     </div>
                     <div class="stage1__parts">
-                        <div class="stage1__parts-text"><b class="stage1__bold">Впускна система:</b>  Заміна заводської впускної системи на відкриту або покращену, що може покращити потік повітря та забезпечити більше кисню для згоряння палива.</div>
+                        <div class="stage1__parts-text"><b class="stage1__bold">Тюнінг трансмісії: </b>Встановлення покращених або спортивних компонентів трансмісії для забезпечення ефективного передачі більшої потужності.</div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="stage1__parts">
+                        <div class="stage1__parts-text"><b class="stage1__bold">Система палива:</b> Зміна системи палива для забезпечення додаткового об'єму пального під час великого навантаження.</div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="stage1__parts">
+                        <div class="stage1__parts-text"><b class="stage1__bold">Підвіска та гальма: </b>Покращення гальм і підвіски для ефективного взаємодії з підвищеною потужністю та динамікою автомобіля.</div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="stage1__parts">
+                        <div class="stage1__parts-text"><b class="stage1__bold">Колеса та шини: </b>Використання легших коліс і вибір відповідних шин для покращення тримання дороги та маневреності.</div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="stage1__parts">
+                        <div class="stage1__parts-text"><b class="stage1__bold">Аеродинамічні елементи: </b>Додавання або модифікація аеродинамічних елементів (спойлери, дефлектори) для зменшення аеродинамічного опору та покращення стабільності на великих швидкостях.</div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="stage1__parts">
+                        <div class="stage1__parts-text"><b class="stage1__bold">Зміни в системі впуску та вихлопу: </b> Повна заміна системи впуску і вихлопу для максимального вільного потоку повітря та виведення вихлопних газів.</div>
                         <label class="switch">
                             <input type="checkbox">
                             <span class="slider round"></span>
@@ -97,7 +132,7 @@
                         </label>
                     </div>
                     <div class="stage1__parts">
-                        <div class="stage1__parts-text"><b class="stage1__bold">Система охолодження:</b>  Покращення системи охолодження для забезпечення оптимальної температури двигуна, особливо під час високого режиму роботи.</div>
+                        <div class="stage1__parts-text"><b class="stage1__bold">Покращення системи охолодження: </b>Встановлення більш ефективних радіаторів та систем охолодження для виведення тепла при великих навантаженнях.</div>
                         <label class="switch">
                             <input type="checkbox">
                             <span class="slider round"></span>
@@ -131,8 +166,8 @@
                 </div>
             </div>
             <div class="delivery__block-btn">
+                <button class="delivery__button" id="stage2" onclick="redirectTo('order.html')">Stage 1</button>
                 <button class="delivery__button" id="stage2" onclick="redirectTo('order2.html')">Stage 2</button>
-                <button class="delivery__button" id="stage3" onclick="redirectTo('order3.html')">Stage 3</button>
                 <button class="delivery__button">Зберегти</button>
                 <button class="delivery__button" href="#" onclick="openModalorder()">Відправити</button>
             </div>

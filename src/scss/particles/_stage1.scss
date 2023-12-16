@@ -1,0 +1,135 @@
+.stage1{
+
+
+    &__image-conteiner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 30px 0;
+    }
+
+    &__image-title{
+        font-family: $font-oswald;
+        font-size: $font-xxxl;
+        font-weight: 700;
+        color: $color-purple;
+    }
+
+    &__title{
+        text-align: center;
+        font-family: $font-oswald;
+        font-size: $font-xxl;
+        font-weight: 700;
+        color: $color-purple;
+        margin-bottom: 20px;
+    }
+
+    &__image{
+        padding: 10px 30px;
+        border: 2px solid $color-purple;
+        border-radius: 10px;
+        max-width: 400px;
+        max-height: 265px;
+    }
+
+    &__parts-conteiner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 20px;
+
+    }
+
+    &__parts{
+        display: inherit;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $color-purple;
+        border-radius: 5px;
+        gap: 20px;
+        padding: 10px;
+        width: 100%;
+
+        @media (max-width:767.999px) {
+            flex-direction: column;
+        }
+    }
+
+    &__bold{
+      color: $color-red;
+    }
+
+    &__parts-text{
+        font-family: $font-oswald;
+        font-size: $font-xl;
+        font-weight: 400;
+        color: $color-electric-purple;
+        width: 85%;
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+
+    @media (max-width:767.999px) {
+    }
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: $color-electric-purple;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+

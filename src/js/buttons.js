@@ -98,12 +98,36 @@ function toggleVisibility(showId, hideId1, hideId2, button) {
     var label = button.querySelector('.label');
     if (label.textContent === 'Вибрати') {
         label.textContent = 'Відмінити';
+        document.getElementById('orderButton').disabled = false;
     } else {
         label.textContent = 'Вибрати';
         hideBlock1.classList.remove('hidden');
         hideBlock2.classList.remove('hidden');
+        document.getElementById('orderButton').disabled = true;
     }
 }
+
+function placeOrder() {
+    var selectedBlock = document.querySelector('.stage__block:not(.hidden)');
+
+    if (selectedBlock) {
+        var blockId = selectedBlock.id;
+
+        var orderPages = {
+            'block1': 'order.html',
+            'block2': 'order2.html',
+            'block3': 'order3.html'
+        };
+
+        var orderPageUrl = orderPages[blockId];
+
+        if (orderPageUrl) {
+            window.location.href = orderPageUrl;
+        }
+    }
+}
+
+
 
 //modal-windows
 function openModal() {
@@ -121,4 +145,51 @@ window.onclick = function (event) {
     if (event.target === modal) {
         modal.style.display = 'none';
     }
+}
+
+//order-counter
+const switches = document.querySelectorAll('.stage1__parts input[type="checkbox"]');
+const counter = document.getElementById('counter');
+
+let activatedSwitchesCount = 0;
+
+function updateCounter() {
+  counter.textContent = `Покращень вибрано: ${activatedSwitchesCount}`;
+}
+
+switches.forEach(switchElement => {
+  switchElement.addEventListener('change', function() {
+    if (this.checked) {
+      activatedSwitchesCount++;
+    } else {
+      activatedSwitchesCount--;
+    }
+    updateCounter();
+  });
+});
+
+updateCounter();
+
+
+//order-modal
+function openModalorder() {
+    var modal = document.getElementById('myModal-order');
+    modal.style.display = 'flex';
+}
+
+function closeModalorder() {
+    var modal = document.getElementById('myModal-order');
+    modal.style.display = 'none';
+}
+
+window.onclick = function (event) {
+    var modal = document.getElementById('myModal-order');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+}
+
+//order-link
+function redirectTo(page) {
+    window.location.href = page;
 }
