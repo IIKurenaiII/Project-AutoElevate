@@ -54,11 +54,14 @@
     border-color: $color-purple; 
 }
 
-.carousel-item img {
+.img-height{
     max-height: 360px; 
     margin: auto; 
 }
 
+#carouselExampleDark.carousel__1{
+    height: 400;
+}
 
 #myCarousel.carousel-main {
         max-height: 400px; 
@@ -81,7 +84,6 @@
     }
 
     .carousel-item img {
-        max-height: 360px; 
         width: auto; 
     }
 
@@ -114,7 +116,6 @@
     }
 
     .carousel__input{
-        width: 300px;
         border: 2px solid $color-purple;
         border-radius: 5px;
         font-size: $font-md;

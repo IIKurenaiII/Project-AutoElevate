@@ -373,9 +373,13 @@ a {
   border-color: #aa17b5;
 }
 
-.carousel-item img {
+.img-height {
   max-height: 360px;
   margin: auto;
+}
+
+#carouselExampleDark.carousel__1 {
+  height: 400;
 }
 
 #myCarousel.carousel-main {
@@ -399,7 +403,6 @@ a {
 }
 
 .carousel-item img {
-  max-height: 360px;
   width: auto;
 }
 
@@ -432,7 +435,6 @@ a {
 }
 
 .carousel__input {
-  width: 300px;
   border: 2px solid #aa17b5;
   border-radius: 5px;
   font-size: 1rem;
