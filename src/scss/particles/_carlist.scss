@@ -48,12 +48,14 @@
     &__block{
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       position: relative;
       height: auto;
       width: auto;
       background: transparent;
       outline: none;
-      transition: opacity 0.5s ease, transform 0.5s ease;
+      
+      transition: all 0.3s ease-in-out;
       opacity: 0;
       transform: translateY(20px);
 
@@ -99,8 +101,7 @@
 
     &__image{
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        max-height: 230px;
     }
 
     &__conteiner-button{

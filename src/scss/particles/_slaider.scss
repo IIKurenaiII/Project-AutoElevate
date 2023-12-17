@@ -54,4 +54,104 @@
     border-color: $color-purple; 
 }
 
+.carousel-item img {
+    max-height: 360px; 
+    margin: auto; 
+}
+
+
+#myCarousel.carousel-main {
+        max-height: 400px; 
+    }
+
+    .carousel-indicators-main {
+        justify-content: space-between; 
+        padding: 10px; 
+    }
+
+    .carousel-inner {
+        height: 100%; 
+    }
+
+    .carousel-item {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+    }
+
+    .carousel-item img {
+        max-height: 360px; 
+        width: auto; 
+    }
+
+    .d-block.mx-auto.w-50.small-img{
+        margin-top: 60px;
+        margin-bottom: 8px;
+    }
+
+    .d-block.mx-auto.w-50.small-img2{
+        margin-top: 80px;
+        margin-bottom: 14px;
+    }
+
+    .d-block.mx-auto.w-50.small-img3{
+        margin-top: 60px;
+        margin-bottom: 14px;
+    }
+
+    .d-block.mx-auto.w-50.small-img4{
+        margin-top: 50px;
+        margin-bottom: 11px;
+    }
+
+    .carousel-main__title.color{
+        margin-bottom: 20px;
+    }
+
+    .d-block.mx-auto.w-50.small-img5{
+        opacity: 0.5;
+    }
+
+    .carousel__input{
+        width: 300px;
+        border: 2px solid $color-purple;
+        border-radius: 5px;
+        font-size: $font-md;
+        padding: 7px 20px 7px 20px;
+        margin-bottom: 10px;
+        transition: width 0.4s ease-in-out;
+        cursor: pointer;
+
+        &:hover{
+            border: 2px solid $color-turquoise;
+        }
+    }
+
+    .carousel__button{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: $font-oswald;
+        font-size: $font-xl;
+        width: 150px;
+        height: 40px;
+        border: 1px solid $color-purple;
+        background: $color-white;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+
+        &:hover{
+            background: $color-purple;
+            color: $color-white;
+        }
+    }
+
+    .carousel__block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
 

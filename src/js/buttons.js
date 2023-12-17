@@ -129,7 +129,7 @@ function placeOrder() {
 
 
 
-//modal-windows
+//modal-window
 function openModal() {
     var modal = document.getElementById('myModal');
     modal.style.display = 'flex';
@@ -173,19 +173,19 @@ updateCounter();
 
 //order-modal
 function openModalorder() {
-    var modal = document.getElementById('myModal-order');
-    modal.style.display = 'flex';
+    var modalo = document.getElementById('myModal-order');
+    modalo.style.display = 'flex';
 }
 
 function closeModalorder() {
-    var modal = document.getElementById('myModal-order');
-    modal.style.display = 'none';
+    var modalo = document.getElementById('myModal-order');
+    modalo.style.display = 'none';
 }
 
 window.onclick = function (event) {
-    var modal = document.getElementById('myModal-order');
-    if (event.target === modal) {
-        modal.style.display = 'none';
+    var modalo = document.getElementById('myModal-order');
+    if (event.target === modalo) {
+        modalo.style.display = 'none';
     }
 }
 
@@ -193,3 +193,22 @@ window.onclick = function (event) {
 function redirectTo(page) {
     window.location.href = page;
 }
+
+
+//registration modal
+function openModalReg () {
+    var modal = document.getElementById('myModalReg');
+    modal.style.display = 'flex';
+}
+
+function closeModalReg () {
+    var modal = document.getElementById('myModalReg');
+    modal.style.display =  'none';
+}
+
+document.addEventListener('click', function (event) {
+    var modal = document.getElementById('myModalReg');
+    if (event.target === modal) {
+        closeModalReg();
+    }
+});

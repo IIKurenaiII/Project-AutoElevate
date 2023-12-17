@@ -107,15 +107,32 @@
             <div class="registration__block">
                 <div class="registration__svg"><img src="./src/image/account_avatar_face_man_people_profile_user_icon_123197.svg" alt=""></div>
                 <div class="registration__input-block">
-                    <div class="registration__title"><h2>Regisrtation</h2></div>
-                    <div><input type="text" class="registration__input" placeholder="e-mail" name="mail"></div>
-                    <div><input type="text" class="registration__input registration__input2" placeholder="password" name="rassword"></div>
-                    <button class="registration__button">Зареєструватися</button>
+                    <button class="registration__button" href="#" onclick="openModalReg()">Зареєструватися</button>
                 </div>
             </div>
             <hr class="line">
         </div>
     </section>
+    <div class="modal" id="myModalReg">
+        <div class="modal__content">
+            <div class="modal__image-conteiner">
+                <img class="modal__logo" src="./src/image/Logo-1.svg" alt="">
+            </div>
+            <div class="modal__contact-conteiner">
+                <div><input type="text" class="registration__input" placeholder="e-mail" name="mail"></div>
+                <div><input type="text" class="registration__input registration__input2" placeholder="password" name="rassword"></div>
+            </div>
+            <div class="modal__social-conteiner">
+                <div class="modal__ig"><img src="./src/image/Instagram_logo_2016.svg" class="modal__social" alt="" id="ig"></div>
+                <div class="modal__fb"><img src="./src/image/Facebook_F_icon.svg" class="modal__social" alt="" id="fb"></div>
+                <div class="modal__tl"><img src="./src/image/Telegram_logo.svg" class="modal__social" alt="" id="tl"></div>
+            </div>
+            <div class="modal__buttons-conteiner">
+                <div><button class="modal__button"  onclick="closeModalReg()">Закрити</button></div>
+                <div><button class="modal__button" onclick="closeModalReg()">Окей</button></div>
+            </div>
+        </div>
+    </div>
     <section class="carlist">
         <div class="conteiner">
             <div class="carlist__conteiner_title">
@@ -125,7 +142,7 @@
             <div class="carlist__grid_conteiner">
                 <div class="carlist__block">
                     <div class="carlist__block-title">BMW</div>
-                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__block-image"><img src="./src/image/carlist-image/bmw.png" alt="" class="carlist__image"></div>
                     <div class="carlist__conteiner-button">
                         <div class="carlist__button animation">
                             <span class="label">Детальніше</span>
@@ -138,8 +155,8 @@
                     </div>
                 </div>
                 <div class="carlist__block">
-                    <div class="carlist__block-title">BMW</div>
-                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__block-title">ASTON MARTIN</div>
+                    <div class="carlist__block-image"><img src="./src/image/carlist-image/aston-martin.png" alt="" class="carlist__image"></div>
                     <div class="carlist__conteiner-button">
                         <div class="carlist__button animation">
                             <span class="label">Детальніше</span>
@@ -152,8 +169,8 @@
                     </div>
                 </div>
                 <div class="carlist__block">
-                    <div class="carlist__block-title">BMW</div>
-                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__block-title">MERCEDES</div>
+                    <div class="carlist__block-image"><img src="./src/image/carlist-image/mercedes-benz.png" alt="" class="carlist__image"></div>
                     <div class="carlist__conteiner-button">
                         <div class="carlist__button animation">
                             <span class="label">Детальніше</span>
@@ -166,8 +183,8 @@
                     </div>
                 </div>
                 <div class="carlist__block">
-                    <div class="carlist__block-title">BMW</div>
-                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__block-title">AUDI</div>
+                    <div class="carlist__block-image"><img src="./src/image/carlist-image/audi.png" alt="" class="carlist__image"></div>
                     <div class="carlist__conteiner-button">
                         <div class="carlist__button animation">
                             <span class="label">Детальніше</span>
@@ -180,8 +197,8 @@
                     </div>
                 </div>
                 <div class="carlist__block">
-                    <div class="carlist__block-title">BMW</div>
-                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__block-title">NISSAN</div>
+                    <div class="carlist__block-image"><img src="./src/image/carlist-image/nissan-gt-r.png" alt="" class="carlist__image"></div>
                     <div class="carlist__conteiner-button">
                         <div class="carlist__button animation">
                             <span class="label">Детальніше</span>
@@ -194,8 +211,8 @@
                     </div>
                 </div>
                 <div class="carlist__block">
-                    <div class="carlist__block-title">BMW</div>
-                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__block-title">LAMBORGHINI</div>
+                    <div class="carlist__block-image"><img src="./src/image/carlist-image/lamborghini-aventador.png" alt="" class="carlist__image"></div>
                     <div class="carlist__conteiner-button">
                         <div class="carlist__button animation">
                             <span class="label">Детальніше</span>
@@ -208,8 +225,8 @@
                     </div>
                 </div>
                 <div class="carlist__block">
-                    <div class="carlist__block-title">BMW</div>
-                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__block-title">LAND ROVER</div>
+                    <div class="carlist__block-image"><img src="./src/image/carlist-image/land-rover.png" alt="" class="carlist__image"></div>
                     <div class="carlist__conteiner-button">
                         <div class="carlist__button animation">
                             <span class="label">Детальніше</span>
@@ -222,8 +239,8 @@
                     </div>
                 </div>
                 <div class="carlist__block">
-                    <div class="carlist__block-title">BMW</div>
-                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__block-title">MASERATI</div>
+                    <div class="carlist__block-image"><img src="./src/image/carlist-image/maserati.png" alt="" class="carlist__image"></div>
                     <div class="carlist__conteiner-button">
                         <div class="carlist__button animation">
                             <span class="label">Детальніше</span>
@@ -236,8 +253,8 @@
                     </div>
                 </div>
                 <div class="carlist__block">
-                    <div class="carlist__block-title">BMW</div>
-                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__block-title">PORSCHE</div>
+                    <div class="carlist__block-image"><img src="./src/image/carlist-image/porsche.png" alt="" class="carlist__image"></div>
                     <div class="carlist__conteiner-button">
                         <div class="carlist__button animation">
                             <span class="label">Детальніше</span>
@@ -250,8 +267,8 @@
                     </div>
                 </div>
                 <div class="carlist__block">
-                    <div class="carlist__block-title">BMW</div>
-                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__block-title">Ferrari</div>
+                    <div class="carlist__block-image"><img src="./src/image/carlist-image/ferrari.png" alt="" class="carlist__image"></div>
                     <div class="carlist__conteiner-button">
                         <div class="carlist__button animation">
                             <span class="label">Детальніше</span>
@@ -264,8 +281,8 @@
                     </div>
                 </div>
                 <div class="carlist__block">
-                    <div class="carlist__block-title">BMW</div>
-                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__block-title">JEEP</div>
+                    <div class="carlist__block-image"><img src="./src/image/carlist-image/jeep.png" alt="" class="carlist__image"></div>
                     <div class="carlist__conteiner-button">
                         <div class="carlist__button animation">
                             <span class="label">Детальніше</span>
@@ -278,8 +295,8 @@
                     </div>
                 </div>
                 <div class="carlist__block">
-                    <div class="carlist__block-title">BMW</div>
-                    <div class="carlist__block-image"><img src="./src/image/bmw-m8-competition-gran-coupe-modelfinder.png" alt="" class="carlist__image"></div>
+                    <div class="carlist__block-title">Інші марки</div>
+                    <div class="carlist__block-image"><img src="./src/image/carlist-image/marki.png" alt="" class="carlist__image"></div>
                     <div class="carlist__conteiner-button">
                         <div class="carlist__button animation">
                             <span class="label">Детальніше</span>
